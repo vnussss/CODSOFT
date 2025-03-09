@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #2E1A47; 
+  font-family: 'Lora', serif;
+  background-color: #FAF0FF; 
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: #9F86C0; 
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #9F86C0; /* Elegant muted purple */
+}
+
+/* Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #EADCF8; /* Soft purple */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 55%;
+  border: 4px solid #C5A3E0; /* Muted soft purple */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+  font-size: 22px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #5E4B7A; /* Soft purple-gray */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #6D5B8F; /* Warm muted purple */
+  font-weight: 500;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  background: #B89AD2; /* Medium pastel purple */
+  color: white;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 40px;
+  margin-left: 300px;
+}
+
+.content h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #9F86C0;
+  border-bottom: 2px solid #4E3A66;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.content p {
+  line-height: 1.6;
+  color: #4E3A66;
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #9F86C0;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #000000; /* Pure Black */
+  color: #FFFFFF !important; /* PURE WHITE TEXT */
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode p, 
+.dark-mode a, 
+.dark-mode li, 
+.dark-mode .tagline {
+  color: #FFFFFF !important; /* PURE WHITE FOR ALL TEXT */
+}
+
+.dark-mode .sidebar {
+  background-color: #1A1A1A; /* Dark grayish-black */
+}
+
+.dark-mode .content h2 {
+  border-bottom-color: #FFFFFF; /* White underline */
+}
+
+/* Dark Mode Button */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background: #9F86C0;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background: #7D659E;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
