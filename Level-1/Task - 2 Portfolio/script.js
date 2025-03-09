@@ -30,7 +30,7 @@
    });
  });
  
- // 📅 Dynamic Year in Footer (if footer exists)
+
  const yearElement = document.getElementById("year");
  if (yearElement) {
    yearElement.textContent = new Date().getFullYear();
