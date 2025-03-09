@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cinzel', sans-serif; /* Use Cinzel font globally */
+  font-family: 'Raleway', sans-serif; 
   scroll-behavior: smooth;
 }
 
 body {
   color: #2E1A47; 
-  font-family: 'Lora', serif; /* Keep Lora for body text */
+  font-family: 'Lora', serif; 
   background-color: #FAF0FF; 
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -21,7 +19,7 @@ a {
 }
 
 h1, h2, h3 {
-  font-family: 'Cinzel', Georgia, serif; /* Make sure headings use Cinzel font */
+  font-family: 'Playfair Display', serif;
   color: #9F86C0;
 }
 
