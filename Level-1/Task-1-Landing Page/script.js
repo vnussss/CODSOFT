@@ -1,13 +1,11 @@
 function enterAdoptionPage() {
-    // Hide the landing page and show the adoption page
     document.getElementById('landing-page').classList.add('hidden');
     document.getElementById('adoption-page').classList.remove('hidden');
 }
 
 function adoptPet(petName, petImage) {
-    alert(`🎉 Congratulations! You have adopted ${petName}. Your virtual pet is now yours! 🐾`);
+    alert(`🎉 Congratulations! You have adopted ${petName}. Your virtual pet is now yours`);
     
-    // Display adopted pet image
     const petAdoptedMessage = document.createElement('div');
     petAdoptedMessage.innerHTML = `
         <h2>You have adopted ${petName}!</h2>
