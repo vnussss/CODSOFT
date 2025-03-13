@@ -3,53 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Pet - Adopt Now!</title>
+    <title>Virtual Pet - Find Your Digital Companion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-    <header>
-        <h1> Virtual Pet - Find Your Digital Companion </h1>
-        <p>Choose from six unique AI-powered pets and start your adventure today </p>
-    </header>
+    <section id="landing-page" class="landing-section">
+        <header>
+            <h1>Welcome to Virtual Pet</h1>
+            <p>Adopt your own AI-powered pet and start an amazing journey with your digital companion.</p>
+        </header>
 
-    <section class="pet-gallery">
-        <div class="pet-card">
-            <img src="images/dog.jpg" alt="Dog">
-            <h2> Dog</h2>
-            <p>Loyal and playful, your virtual best friend!</p>
-            <button class="adopt-btn" onclick="adoptPet('Dog')">Adopt Now</button>
+        <div class="pet-showcase">
+            <div class="pet-box"><img src="images/dog.jpg" alt="Dog"></div>
+            <div class="pet-box"><img src="images/cat.jpg" alt="Cat"></div>
+            <div class="pet-box"><img src="images/hamster.jpg" alt="Hamster"></div>
+            <div class="pet-box"><img src="images/fox.avif" alt="Fox"></div>
+            <div class="pet-box"><img src="images/parrot.avif" alt="Parrot"></div>
+            <div class="pet-box"><img src="images/bunny.jpg" alt="Bunny"></div>
         </div>
-        <div class="pet-card">
-            <img src="images/cat.jpg" alt="Cat">
-            <h2>Cat</h2>
-            <p>Smart and independent, perfect for chill vibes.</p>
-            <button class="adopt-btn" onclick="adoptPet('Cat')">Adopt Now</button>
-        </div>
-        <div class="pet-card">
-            <img src="images/hamster.jpg" alt="Hamster">
-            <h2>Hamster</h2>
-            <p>Small but full of energy, always on the move!</p>
-            <button class="adopt-btn" onclick="adoptPet('Hamster')">Adopt Now</button>
-        </div>
-        <div class="pet-card">
-            <img src="images/fox.avif" alt="Fox">
-            <h2>Fox</h2>
-            <p>Clever and curious, your adventurous companion.</p>
-            <button class="adopt-btn" onclick="adoptPet('Fox')">Adopt Now</button>
-        </div>
-        <div class="pet-card">
-            <img src="images/parrot.avif" alt="Parrot">
-            <h2>Parrot</h2>
-            <p>A talking companion, always entertaining!</p>
-            <button class="adopt-btn" onclick="adoptPet('Parrot')">Adopt Now</button>
-        </div>
-        <div class="pet-card">
-            <img src="images/bunny.jpg" alt="Bunny">
-            <h2>Bunny</h2>
-            <p>Soft and cuddly, a bundle of joy!</p>
-            <button class="adopt-btn" onclick="adoptPet('Bunny')">Adopt Now</button>
-        </div>
+
+        <button class="enter-btn" onclick="enterAdoptionPage()">Explore Pets</button>
+    </section>
+
+    <section id="adoption-page" class="hidden">
+        <header>
+            <h1>Virtual Pet - Find Your Digital Companion</h1>
+            <p>Choose from six unique AI-powered pets and start your adventure today.</p>
+        </header>
+
+        <section class="pet-gallery">
+            <div class="pet-card">
+                <img src="images/dog.jpg" alt="Dog">
+                <h2>Charlie</h2>
+                <p>Loyal and playful, your virtual best friend!</p>
+                <button class="adopt-btn" onclick="adoptPet('Dog', 'images/dog.jpg')">Adopt Now</button>
+            </div>
+            <div class="pet-card">
+                <img src="images/cat.jpg" alt="Cat">
+                <h2>Whiskers</h2>
+                <p>Smart and independent, perfect for chill vibes.</p>
+                <button class="adopt-btn" onclick="adoptPet('Cat', 'images/cat.jpg')">Adopt Now</button>
+            </div>
+            <div class="pet-card">
+                <img src="images/hamster.jpg" alt="Hamster">
+                <h2>Poppy</h2>
+                <p>Small but full of energy, always on the move!</p>
+                <button class="adopt-btn" onclick="adoptPet('Hamster', 'images/hamster.jpg')">Adopt Now</button>
+            </div>
+            <div class="pet-card">
+                <img src="images/fox.avif" alt="Fox">
+                <h2>Scarlet</h2>
+                <p>Clever and curious, your adventurous companion.</p>
+                <button class="adopt-btn" onclick="adoptPet('Fox', 'images/fox.avif')">Adopt Now</button>
+            </div>
+            <div class="pet-card">
+                <img src="images/parrot.avif" alt="Parrot">
+                <h2>Eva</h2>
+                <p>A talking companion, always entertaining!</p>
+                <button class="adopt-btn" onclick="adoptPet('Parrot', 'images/parrot.avif')">Adopt Now</button>
+            </div>
+            <div class="pet-card">
+                <img src="images/bunny.jpg" alt="Bunny">
+                <h2>Buttercup</h2>
+                <p>Soft and cuddly, a bundle of joy!</p>
+                <button class="adopt-btn" onclick="adoptPet('Bunny', 'images/bunny.jpg')">Adopt Now</button>
+            </div>
+        </section>
     </section>
 
     <script src="script.js"></script>
