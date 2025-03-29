@@ -3,82 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Pet - Find Your Digital Companion</title>
+    <title>CyberZone | Enter the Future</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    
-    <section id="landing-page" class="landing-section">
-        <header>
-            <h1>Welcome to Virtual Pet</h1>
-            <p>Adopt your own AI-powered pet and start an amazing journey with your digital companion.</p>
-            <p>Step into a world where you can adopt and care for a unique AI-powered pet, right from your screen! Whether you’re looking for a playful puppy, a curious cat, or a talkative parrot, our virtual pets are designed to bring joy, companionship, and endless fun. Choose from a variety of adorable digital pets, each with its own personality, and start your adventure today. Click below to explore and find your perfect companion!</p>
-        </header>
 
-        <div class="pet-showcase">
-            <div class="pet-box"><img src="images/dog.jpg" alt="Dog"></div>
-            <div class="pet-box"><img src="images/cat.jpg" alt="Cat"></div>
-            <div class="pet-box"><img src="images/hamster.jpg" alt="Hamster"></div>
-            <div class="pet-box"><img src="images/fox.avif" alt="Fox"></div>
-            <div class="pet-box"><img src="images/parrot.avif" alt="Parrot"></div>
-            <div class="pet-box"><img src="images/bunny.jpg" alt="Bunny"></div>
+    <!-- Cyberpunk Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1 class="logo">Cyber<span>Zone</span></h1>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span class="glow">CyberZone</span></h1>
+            <p>The future of gaming is here.</p>
+            <button class="cta-button">Enter the Game</button>
         </div>
+    </header>
 
-        <button class="enter-btn" onclick="enterAdoptionPage()">Explore Pets</button>
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Next-Gen Features</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <h3>Immersive Worlds</h3>
+                <p>Explore vast, open environments with stunning neon visuals.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Real-Time Battles</h3>
+                <p>Compete in high-speed action with cyber-enhanced AI.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Custom Avatars</h3>
+                <p>Build and upgrade your own cybernetic warrior.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="adoption-page" class="hidden">
-        <header>
-            <h1>Virtual Pet - Find Your Digital Companion</h1>
-            <p>Choose from six unique AI-powered pets and start your adventure today.</p>
-        </header>
-
-        <section class="pet-gallery">
-            <div class="pet-card">
-                <img src="images/dog.jpg" alt="Dog">
-                <h2>Charlie</h2>
-                <p>Loyal and playful, your virtual best friend!</p>
-                <p>"Meet Charlie, your ultimate virtual companion.Full of energy, love, and loyalty, Charlie is always ready for an adventure. Whether you're looking for a playful friend to brighten your day or a cuddle buddy to keep you company, Charlie is the perfect choice. Bring home endless joy and unconditional friendship today"</p>
-                <button class="adopt-btn" onclick="adoptPet('Dog', 'images/dog.jpg')">Adopt Now</button>
-            </div>
-            <div class="pet-card">
-                <img src="images/cat.jpg" alt="Cat">
-                <h2>Whiskers</h2>
-                <p>Smart and independent, perfect for chill vibes.</p>
-                <p>"Say hello to Whiskers, your intelligent and independent virtual feline. With a curious mind and a love for cozy naps, Whiskers is the perfect companion for those who enjoy a relaxed and peaceful vibe. Whether it’s exploring new places or simply lounging by your side, this virtual cat will bring warmth and charm to your digital world"</p>
-                <button class="adopt-btn" onclick="adoptPet('Cat', 'images/cat.jpg')">Adopt Now</button>
-            </div>
-            <div class="pet-card">
-                <img src="images/hamster.jpg" alt="Hamster">
-                <h2>Poppy</h2>
-                <p>Small but full of energy, always on the move!</p>
-                <p>"Meet Poppy, your tiny bundle of energy. Always on the move and ready for fun, Poppy brings excitement and joy wherever she goes. This little adventurer may be small, but her playful spirit and curious nature make her the perfect virtual pet for those who love non-stop action and cuteness"</p>
-                <button class="adopt-btn" onclick="adoptPet('Hamster', 'images/hamster.jpg')">Adopt Now</button>
-            </div>
-            <div class="pet-card">
-                <img src="images/fox.avif" alt="Fox">
-                <h2>Scarlet</h2>
-                <p>Clever and curious, your adventurous companion.</p>
-                <p>"Introducing Scarlet, your clever and adventurous virtual fox. With a sharp mind and a curious spirit, Scarlet is always ready to explore and discover new things. Whether it’s embarking on thrilling adventures or simply keeping you company, this intelligent and playful fox will be your perfect digital companion"</p>
-                <button class="adopt-btn" onclick="adoptPet('Fox', 'images/fox.avif')">Adopt Now</button>
-            </div>
-            <div class="pet-card">
-                <img src="images/parrot.avif" alt="Parrot">
-                <h2>Eva</h2>
-                <p>A talking companion, always entertaining!</p>
-                <p>"Meet Eva, your lively and talkative virtual parrot. Full of personality and charm, Eva loves to chat, mimic sounds, and keep you entertained all day long. Whether you're looking for a cheerful companion or a fun-loving friend, Eva is always ready to brighten your day with her vibrant energy and playful chatter"</p>
-                <button class="adopt-btn" onclick="adoptPet('Parrot', 'images/parrot.avif')">Adopt Now</button>
-            </div>
-            <div class="pet-card">
-                <img src="images/bunny.jpg" alt="Bunny">
-                <h2>Buttercup</h2>
-                <p>Soft and cuddly, a bundle of joy!</p>
-                <p>"Say hello to Buttercup, your soft and cuddly virtual bunny. Gentle, affectionate, and full of warmth, Buttercup is the perfect companion for those who love sweetness and charm. Whether hopping around playfully or snuggling up for comfort, this adorable bunny will bring endless joy and love to your virtual world"</p>
-                <button class="adopt-btn" onclick="adoptPet('Bunny', 'images/bunny.jpg')">Adopt Now</button>
-            </div>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Join the Revolution</h2>
+        <button class="cta-button">Sign Up Now</button>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 CyberZone | The Future is Now</p>
+    </footer>
+
 </body>
 </html>

@@ -1,35 +1,28 @@
-function enterAdoptionPage() {
-    document.getElementById('landing-page').classList.add('hidden');
-    document.getElementById('adoption-page').classList.remove('hidden');
-}
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
-function adoptPet(petName, petImage) {
-    alert(`🎉 Congratulations! You have adopted ${petName}. Your virtual pet is now yours!`);
+// CyberZone Terminal Welcome Message
+console.log('%cWelcome to CyberZone!', 'color: #0ff; font-size: 20px; font-weight: bold; text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;');
 
+console.log('%cThe future of gaming is here.', 'color: #fff; font-size: 16px; text-shadow: 0 0 5px #fff;');
 
-    let existingMessage = document.getElementById('adopted-message');
-    if (existingMessage) {
-        existingMessage.remove();
-    }
+console.log('%c🚀 Are you ready to enter the game?', 'color: #ff00ff; font-size: 14px; font-style: italic;');
 
+// Fun ASCII Art for Cyberpunk Vibes
+console.log(`
+███████╗██╗   ██╗██████╗ ███████╗███████╗ ██████╗ ███╗   ██╗███████╗
+██╔════╝██║   ██║██╔══██╗██╔════╝██╔════╝██╔═══██╗████╗  ██║██╔════╝
+███████╗██║   ██║██████╔╝█████╗  █████╗  ██║   ██║██╔██╗ ██║███████╗
+╚════██║██║   ██║██╔═══╝ ██╔══╝  ██╔══╝  ██║   ██║██║╚██╗██║╚════██║
+███████║╚██████╔╝██║     ███████╗██║     ╚██████╔╝██║ ╚████║███████║
+╚══════╝ ╚═════╝ ╚═╝     ╚══════╝╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+`);
 
-    const petAdoptedMessage = document.createElement('div');
-    petAdoptedMessage.id = 'adopted-message';
-    petAdoptedMessage.style.textAlign = 'center';
-    petAdoptedMessage.style.marginTop = '20px';
-
-    petAdoptedMessage.innerHTML = `
-        <h2>You have adopted ${petName}!</h2>
-        <img src="${petImage}" alt="${petName}" style="width: 300px; border-radius: 15px; margin-top: 20px;">
-        <br><br>
-        <button onclick="goBackToAdoptionPage()" style="padding: 10px 20px; font-size: 16px; border: none; background: #4CAF50; color: white; border-radius: 10px; cursor: pointer;">
-            Back to Adoption Page
-        </button>
-    `;
-
-    document.body.appendChild(petAdoptedMessage);
-}
-
-function goBackToAdoptionPage() {
-    document.getElementById('adopted-message').remove();
-}
+console.log('%c👾 Stay tuned for more!', 'color: #0ff; font-size: 12px; font-weight: bold; text-shadow: 0 0 5px #0ff;');
